@@ -66,16 +66,13 @@ This demo shows how to:
         <matched_variant_sequence>
      ```
 
-     <b>Note:</b>Both find_better_variant.m and find_same_variant.m use the following code to save results (append mode):<br>
-        ```matlab
-        fp = fopen('varOfCgasSame.txt', 'a');
-         ```
-        ```matlab
-       fp = fopen('varOfCgasSame.txt', 'a');
-       fprintf(fp, '%d \n', best_score);
-    fprintf(fp, '%s \n', best_seq);
-    fclose(fp);
-     ```
+     <b>Note:</b>Both find_better_variant.m and find_same_variant.m use the following code to save results (append mode):
+            ```matlab
+            fp = fopen('varOfCgasSame.txt', 'a');
+            fprintf(fp, '%d \n', best_score);
+            fprintf(fp, '%s \n', best_seq);
+            fclose(fp);
+            ```
 
 - <b>Expected run time for demo:</b>
   - Approximately 1-3 minutes on a typical desktop computer, depending on the size of the dataset.
