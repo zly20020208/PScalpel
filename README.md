@@ -53,10 +53,10 @@ This demo shows how to:
   The find_better_variant.m script mutates the input sequence at single positions, evaluates each mutant’s score, and appends the best (highest-scoring) variant to varOfCgasBetter.txt.
   After running, varOfCgasBetter.txt will contain:
     ```php-template
-     cd 'path_to_cloned_repository'
-     ```
         <best_score>
         <best_variant_sequence>
+     ```
+  
 
 - Expected run time for demo:
   - Approximately 1-3 minutes on a typical desktop computer, depending on the size of the dataset.
