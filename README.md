@@ -67,12 +67,12 @@ This demo shows how to:
      ```
 
      <b>Note:</b>Both find_better_variant.m and find_same_variant.m use the following code to save results (append mode):<br>
-         ```matlab
-           
+        ```matlab
+            fp = fopen('varOfCgasSame.txt', 'a');
          ```
         ```matlab
-    fp = fopen('varOfCgasSame.txt', 'a');
-    fprintf(fp, '%d \n', best_score);
+       fp = fopen('varOfCgasSame.txt', 'a');
+       fprintf(fp, '%d \n', best_score);
     fprintf(fp, '%s \n', best_seq);
     fclose(fp);
      ```
