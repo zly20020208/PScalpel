@@ -45,7 +45,7 @@ This demo shows how to:
    
 - <b>Compute phase separation score:</b><br>
   The compute_score.m script takes a single protein sequence as input and returns its phase separation score.
-  - Input:one-letter amino acid sequence
+  - Input：one-letter amino acid sequence
   - Output：a score about phase separation ability
  
     
@@ -56,18 +56,26 @@ This demo shows how to:
         <best_score>
         <best_variant_sequence>
      ```
-  
 
-- Expected run time for demo:
+
+  - <b>Find variant with similar phase separation:</b><br>
+  The find_same_variant.m script searches for a mutant whose score is closest to the original sequence’s score and appends it to varOfCgasSame.txt.
+  After running, varOfCgasSame.txt will contain:
+    ```php-template
+         <matched_score>
+         <matched_variant_sequence>
+     ```
+
+     <b>Note:</b>Both find_better_variant.m and find_same_variant.m use the following code to save results (append mode):
+         ```matlab
+       fp = fopen('varOfCgasSame.txt', 'a');
+       fprintf(fp, '%d \n', best_score);
+       fprintf(fp, '%s \n', best_seq);
+       fclose(fp);
+     ```     
+
+- <b>Expected run time for demo:</b>
   - Approximately 1-3 minutes on a typical desktop computer, depending on the size of the dataset.
 
-### 4. Instructions for Use
-
-- How to run the software on your data:
-  1. Convert your dataset to a `.mat` format supported by MATLAB and place it in the `data/` directory.
-  2. Run the following MATLAB command to process your data:
-     ```matlab
-     main('data/your_data.mat');
-     ```
 
   
