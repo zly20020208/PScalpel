@@ -41,11 +41,19 @@ This demo shows how to:
 2. Find a mutated variant with improved phase separation.
 
 3. Find a mutated variant with similar phase separation.
-- Instructions to run on data:
-  1. Run the main script `main.m` in MATLAB to process the sample data:
 
-- Expected output:
-  - Output will be saved in the `results/` directory, including processed data files and visualization charts.
+   
+- Compute phase separation score:
+  The compute_score.m script takes a single protein sequence as input and returns its phase separation score.
+  - Input:one-letter amino acid sequence
+  - Output：a score about phase separation ability
+ 
+    
+- Find variant with improved phase separation:
+  The find_better_variant.m script mutates the input sequence at single positions, evaluates each mutant’s score, and appends the best (highest-scoring) variant to varOfCgasBetter.txt.
+  After running, varOfCgasBetter.txt will contain:
+        <best_score>
+        <best_variant_sequence>
 
 - Expected run time for demo:
   - Approximately 1-3 minutes on a typical desktop computer, depending on the size of the dataset.
