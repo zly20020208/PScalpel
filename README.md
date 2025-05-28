@@ -58,7 +58,7 @@ This demo shows how to:
      ```
 
 
-  - <b>Find variant with similar phase separation:</b><br>
+ - <b>Find variant with similar phase separation:</b><br>
   The find_same_variant.m script searches for a mutant whose score is closest to the original sequence’s score and appends it to varOfCgasSame.txt.
   After running, varOfCgasSame.txt will contain:
     ```php-template
@@ -66,7 +66,7 @@ This demo shows how to:
         <matched_variant_sequence>
      ```
 
-     <b>Note:</b>Both find_better_variant.m and find_same_variant.m use the following code to save results (append mode):
+     <b>Note:</b>Both find_better_variant.m and find_same_variant.m use the following code to save results (append mode):<br>
          ```matlab
             fp = fopen('varOfCgasSame.txt', 'a');
             fprintf(fp, '%d \n', best_score);
