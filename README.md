@@ -43,15 +43,18 @@ This demo shows how to:
 3. Find a mutated variant with similar phase separation.
 
    
-- Compute phase separation score:
+- <b>Compute phase separation score:</b><br>
   The compute_score.m script takes a single protein sequence as input and returns its phase separation score.
   - Input:one-letter amino acid sequence
   - Output：a score about phase separation ability
  
     
-- Find variant with improved phase separation:
+- <b>Find variant with improved phase separation:</b><br>
   The find_better_variant.m script mutates the input sequence at single positions, evaluates each mutant’s score, and appends the best (highest-scoring) variant to varOfCgasBetter.txt.
   After running, varOfCgasBetter.txt will contain:
+    ```php-template
+     cd 'path_to_cloned_repository'
+     ```
         <best_score>
         <best_variant_sequence>
 
