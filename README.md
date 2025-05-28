@@ -34,6 +34,13 @@ Extraction code: pscp
 
 ### 3. Demo
 
+This demo shows how to:
+
+1. Compute the phase separation score of any protein sequence.
+
+2. Find a mutated variant with improved phase separation.
+
+3. Find a mutated variant with similar phase separation.
 - Instructions to run on data:
   1. Run the main script `main.m` in MATLAB to process the sample data:
 
